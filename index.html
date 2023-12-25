@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Age Calculator Box -->
+    <form class="age-calc-main-box">
+
+      <!-- Age Input Box -->
+
+      <div class="age-input-group-box">
+        <div class="age-input-box">
+          <label for="birth_day">Day</label>
+          <input type="number" placeholder="DD" id="birth_day" min="1" max="31" name="birth_day" required/>
+        </div>
+
+        <div class="age-input-box">
+          <label for="birth_month">Month</label>
+          <input type="number" placeholder="MM" id="birth_month" min="1" max="12" name="birth_month" required/>
+        </div>
+
+        <div class="age-input-box">
+          <label for="birth_year">Year</label>
+          <input type="number" placeholder="YYYY" id="birth_year" name="birth_year" required/>
+        </div>
+
+      </div>
+
+      <!-- Age Calculator Btn -->
+
+      <button type="submit" id="age_calc_btn"><img src="./assets/images/icon-arrow.svg" alt="icon-arrow.svg"></button>
+
+      <!-- Age Calculator Result Box -->
+
+      <div class="calc-age-group-box">
+        <div class="calc-age-box"><span id="calc_year">- -</span> years</div>
+        <div class="calc-age-box"><span id="calc_month">- -</span> months</div>
+        <div class="calc-age-box"><span id="calc_day">- -</span> days</div>
+      </div>
+    </form>
+  </main>
+
+
+  <!-- Jquery CDN -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+  <!-- Jquery Validation -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+  <!-- Scripts -->
+
+  <script src="./assets/js/main.js"></script>
+
+ 
+
+
+
+
+</body>
+
+</html>
